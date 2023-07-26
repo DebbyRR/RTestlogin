@@ -1,0 +1,80 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('wall2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px  50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.Logo{
+   color: whitesmoke;
+   font-size: 2em;
+   user-select: none;
+    
+}
+.navigatino a {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+   
+
+}
+.navigatino a::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -7px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigatino :hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+.popup:hover{
+    background: #ffffff;
+    color: black;
+}
+
